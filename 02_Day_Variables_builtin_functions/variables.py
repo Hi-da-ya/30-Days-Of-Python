@@ -1,40 +1,45 @@
-
+#Day 2
+import math
 # Variables in Python
-
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
-city = 'Helsinki'
-age = 250
-is_married = True
-skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
+first_name = 'Asabeneh' #type = str
+last_name = 'Yetayeh'   #type = str
+full_name = (first_name, last_name)
+country = 'Finland' #type = str
+city = 'Helsinki'   #type = str
+age = 250  #type = int
+year = 2024 #type = int
+is_married = True #type = Bool
+is_ligtht_on = False #type = Bool
+skills = ['HTML', 'CSS', 'JS', 'React', 'Python'] #type = list
 person_info = {
     'firstname':'Asabeneh', 
     'lastname':'Yetayeh', 
     'country':'Finland',
     'city':'Helsinki'
-    }
-
-# Printing the values stored in the variables
-
-print('First name:', first_name)
-print('First name length:', len(first_name))
-print('Last name: ', last_name)
-print('Last name length: ', len(last_name))
-print('Country: ', country)
-print('City: ', city)
-print('Age: ', age)
-print('Married: ', is_married)
-print('Skills: ', skills)
-print('Person information: ', person_info)
+    } #type = dict
 
 # Declaring multiple variables in one line
 
 first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+#Quesion 4 
+num_one = 5
+num_two = 4
 
-print(first_name, last_name, country, age, is_married)
-print('First name:', first_name)
-print('Last name: ', last_name)
-print('Country: ', country)
-print('Age: ', age)
-print('Married: ', is_married)
+total = sum([num_one, num_two])
+diff = num_one - num_two
+product = num_one * num_two
+division = num_one / num_two
+remainder = num_two % num_one
+exp = math.pow(num_one, num_two)
+floor_division = num_one // num_two
+
+#Question 5
+radius = float(input("Enter radius: "))
+area_of_circle = math.pi * math.pow(radius, 2 )
+circum_of_circle = math.pi * (radius * 2)
+
+print("Area of circle is: ", area_of_circle)
+print("Circumference is: ", circum_of_circle)
+
+
+
